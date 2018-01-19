@@ -1,0 +1,27 @@
+Give advantages and disadvantages of a parallel programming model over a distributed system (message
+-based) system.
+
+NOTE: Answers derived largely from the book 'Concurrent and Distributed Computing in Java' and 
+Stack Overflow. Credits go to them. 
+
+Parallel Programming Model
+	Advantages
+		1. Generally faster to update a shared memory location than to send a message to another 
+		   processor.
+		2. More efficient to get fine-grain parallelism from a parallel system than from a 
+		   distributed system.
+	Disadvantages
+		1. Shared memory becomes a bottleneck when the number of processors is increased
+Distributed System Model
+	Advantages
+		1. Distributed Systems are more scalable than parallel systems
+		2. More flexible because a single processor can be modified (added/deleted) easily. The
+		   added proccessor can be completely different.
+		3. Multiple organizations can share data with one another.
+		4. Multiple organizations can share expensive equipment together.
+		5. Distributed systems are more fail proof because the failure of one single computer does 
+		   not compromise the entire ecosystem.
+		6. Availability of high bandwidth networks infrastructure favors distributed computing 
+	Disadvantages
+		1. Messages can be lost in the network system. Communication breakdown.
+		2. 
